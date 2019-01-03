@@ -1,0 +1,149 @@
+.job-form-section {
+    padding: 80px 0;
+    background: #fafafa;
+
+   // #gradient > .horizontal(darken($variant-violet, 10%); $variant-violet; 20%; 80%);
+
+   .job-main-form  {
+       margin-bottom: 40px;
+       label {
+           @include uppercase;
+           margin-left: 10px;
+       }
+   }
+
+   &.job-form-section--compressed {
+       padding: 20px;
+       .job-main-form  {
+           margin-bottom: 0;
+       }
+   }
+
+   &.job-form-section--image {
+       background: center center url('../img/meeting.jpg') no-repeat;
+       background-size: cover;
+   }
+
+}
+
+.job-main-form__button {
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+}
+
+.job-form-box {
+    background-color:rgba(255,255,255,0.8);
+    padding: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+.job-listing {
+    border: solid 1px $gray-300;
+    border-bottom: none;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 19px;
+    padding-right: 15px;
+    clear: both;
+    @include ondrTransition;
+    &.job-listing--featured {
+        border-left: solid 5px  $brand-primary;
+        padding-left: 15px;
+    }
+    &.job-listing--last {
+        border-bottom: solid 1px  $gray-300;
+        margin-bottom: 40px;
+    }
+    &:hover {
+        background: #fafafa;
+    }
+}
+.job-content {
+    padding: 0 15px;
+}
+.job__title {
+    margin-top: 0;
+}
+.job__star__link {
+    color: $gray-500;
+    &.active, &:hover {
+        color: $brand-primary;
+    }
+}
+.job__location {
+    margin-right: 5px; color: $gray-600;
+}
+.job__star {
+    text-align: right;
+}
+
+.featured__details {
+    font-family: $headings-font-family;
+    font-size: $font-size-sm;
+    @include uppercase;
+}
+.featured__label{
+    margin-left: 5px;
+    position: relative;
+    top: -2px;
+}
+
+.job-detail-description {
+    text-align: center;
+    @include uppercase;
+    font-family: $headings-font-family;
+    color: $gray-600;
+    font-size: 0.9rem;
+}
+.job-detail__company-description {
+    color: $gray-600;
+}
+.job-detail__social {
+    text-align: left !important;
+    padding: 20px 0;
+}
+.job-detail__apply-top {}
+.job-detail__apply-bottom {
+    margin-top: 40px;
+}
+
+.heading small {
+    font-size: 1.4rem;
+}
+
+.social--outline {
+    a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+        border: 1px solid $brand-primary;
+        text-align: center;
+        padding: 0;
+        display: inline-block;
+        margin-right: 10px;
+
+        &.link {
+            color: #871AFF;
+            border-color: #871AFF;
+        }
+        &.twitter {
+            color: #3cf;
+            border-color: #3cf;
+        }
+        &.facebook {
+            color: #4460ae;
+            border-color: #4460ae;
+        }
+    }
+}
+
+
+@include media-breakpoint-down(md) {
+    .job-listing {
+        font-size: 0.85rem;
+    }
+}

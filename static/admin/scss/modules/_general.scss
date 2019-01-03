@@ -1,0 +1,336 @@
+/*
+*
+* =====================
+* GENERAL
+* =====================
+*
+*/
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+header {
+    z-index: 1000;
+}
+
+section {
+    position: relative;
+    padding-top: $grid-gutter-width * 3;
+    padding-bottom: $grid-gutter-width * 3;
+}
+
+button {
+    cursor: pointer;
+}
+
+section.section-divider {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    p {
+        font-size: $font-size-lg;
+        font-weight: 300;
+        color: #fff;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: $brand-secondary;
+        opacity: 0.95;
+    }
+    .btn {
+        margin-left: 20px;
+    }
+}
+
+.italic {
+    font-style: italic;
+    font-family: $font-family-serif;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 40px;
+    &:after {
+        content: " ";
+        display: block;
+        width: 100px;
+        height: 2px;
+        margin: 20px auto 20px;
+        background: $brand-primary;
+    }
+}
+
+.img-responsive {
+    margin: 0 auto;
+}
+
+.no-space {
+    .box {
+        margin: 0 -($grid-gutter-width / 2);
+    }
+}
+
+.margin-top {
+    margin-top: $grid-gutter-width;
+}
+
+.margin-bottom {
+    margin-bottom: $grid-gutter-width;
+}
+
+.margin-bottom--big {
+    margin-bottom: $grid-gutter-width * 2 !important;
+}
+
+a,
+button {
+    @include ondrTransition;
+    i.fa {
+        margin: 0 5px;
+    }
+}
+
+.bg-light-gray {
+    background: #fafafa;
+}
+
+.clickable {
+    cursor: pointer !important;
+}
+
+.required {
+    color: $brand-primary;
+}
+
+.accent {
+    color: $brand-primary;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+.panel-group {
+    margin-bottom: 60px;
+}
+
+.pages {
+    text-align: center;
+}
+
+#map {
+    height: 300px;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.text-small {
+    font-size: 0.78rem;
+}
+
+.bg-light-gray {
+    background: $gray-100;
+}
+
+.breadcrumb {
+    background: none;
+    text-align: center;
+    li,
+    a {
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        font-weight: 300;
+        font-size: 0.75rem;
+        font-family: $headings-font-family;
+    }
+}
+
+input[type='file'] {
+    font-size: 0.8rem;
+}
+
+textarea.form-control {
+    min-height: 120px;
+}
+
+.btn-outline-light {
+    &:hover {
+        color: $brand-primary !important;
+    }
+    &:focus {
+        color: #fff !important;
+    }
+}
+
+.badge {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: $headings-font-family;
+    font-size: 0.65rem;
+    padding: 5px;
+}
+
+.table {
+    font-size: 0.9rem;
+}
+
+.table td,
+.table th {
+    border-top: none;
+    border-bottom: 1px solid #e9ecef;
+}
+
+#accordion {
+    .card {
+        border-color: $brand-primary;
+        margin-bottom: 10px;
+        .card-header {
+            background: $brand-primary;
+            padding: 0;
+            h5 {
+                color: #fff;
+                font-weight: 300;
+                text-transform: uppercase;
+            }
+            button {
+                color: #fff;
+                font-weight: 300;
+                display: block;
+                width: 100%;
+                text-align: left;
+                padding: 10px 15px;
+                letter-spacing: 0.05rem;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+strong {
+    font-weight: $font-weight-bold;
+}
+
+.modal-content {
+    border-radius: 0;
+}
+
+/* Bootstrap Select override styles */
+
+.bootstrap-select.show>.dropdown-menu>.dropdown-menu {
+    display: block;
+    overflow-y: hidden !important;
+}
+
+.bootstrap-select>.dropdown-menu>.dropdown-menu li.hidden {
+    display: none;
+}
+
+.bootstrap-select {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+    
+    .dropdown-toggle {
+        padding-top: 5px !important;
+        background: #fff;
+        padding: $input-btn-padding-y $input-btn-padding-x;
+        font-size: 1rem;
+        line-height: $input-btn-line-height;
+        color: $input-color;
+        border: $input-btn-border-width solid $input-border-color;
+        font-family: $font-family-base;
+        text-transform: none;
+        &:focus {
+            border-color: $input-focus-border-color;
+            outline: 0 !important;
+        }
+        span.bs-caret {
+            margin-right: -20px;
+        }
+        .filter-option {
+            font-weight: 400;
+            color: $input-color;
+        }        
+    }
+
+    .dropdown-menu {
+        border-radius: 0;
+        font-size: 1em;
+        &.open {
+            max-height: 230px !important;
+            overflow-y: scroll !important;
+            &::-webkit-scrollbar {
+                width: 5px;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: darkgrey;
+            }
+        }
+        a {
+            color: #777;
+            width: 100%;
+            padding: 10px;
+            display: block;
+            padding: 8px 10px;
+            outline: none;
+            &:hover {
+                background: $brand-primary;
+                color: #fff;
+            }
+        }
+    }
+    span.filter-option {
+        text-transform: none !important;
+        letter-spacing: 0;
+        font-family: $font-family-base;
+        color: #aaa;
+    }
+}
+
+.contact-form {
+    label {
+        font-size: 0.85rem;
+    }
+}
+
+.bootstrap-select>.dropdown-toggle.bs-placeholder {
+    outline: none !important;
+}
+
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark {
+    top: 2px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    &::before {
+        content: '\f00c';
+        color: #666;
+        position: absolute;
+        top: 0;
+        right: 3px;
+        display: block;
+        font-family: 'FontAwesome';
+    }
+    &~.text {
+        color: #333;
+    }
+}

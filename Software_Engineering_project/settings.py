@@ -25,7 +25,7 @@ SECRET_KEY = '0ztff=(@pvbaiwnukv$yv8ngj!vc7$u=6&8)lr#azxvn$y*&u&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*',]
 
 
 # Application definition
@@ -121,6 +121,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILE_DIRS=[
+STATICFILES_DIRS=[
     os.path.join(BASE_DIR,'static')
 ]

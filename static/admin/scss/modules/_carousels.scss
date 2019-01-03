@@ -1,0 +1,132 @@
+.owl-carousel,
+.owl-theme {
+    .owl-controls .owl-page.active span,
+    .owl-controls.clickable .owl-page:hover span {
+        background: $brand-primary;
+    }
+    .owl-controls .owl-buttons {
+        position: absolute;
+        top: 5px;
+        right: 0;
+        div {
+            width: 26px;
+            height: 26px;
+            line-height: 25px;
+            margin: 0 5px 0 0;
+            font-size: 18px;
+            color: $brand-primary;
+            padding: 0;
+            background: #fff;
+            border-radius: 13px;
+            vertical-align: middle;
+            text-align: center;
+        }
+    }
+}
+
+.testimonials {
+    padding: 0;
+    margin-bottom: 40px;
+   .item {
+       list-style-type: none;
+       margin: 0 5px;
+       background: #fff;
+       padding-bottom: 60px;
+      .testimonial {
+          position: relative;
+          padding: 20px;
+          @include clearfix();
+        .text {
+            color: $gray-600;
+             margin-bottom: 40px;
+
+             p {
+                 color: inherit;
+             }
+         }
+        .bottom {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding: 20px;
+            height: 50px;
+            .icon {
+                color: $brand-primary;
+                font-size: 30px;
+                float: left;
+                width: 20%;
+            }
+        }
+        .name-picture {
+            float: right;
+            width: 80%;
+            text-align: right;
+            h5 {
+                font-size: $font-size-base;
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
+            }
+            p {
+                color: $gray-600;
+                margin: 0;
+                font-size: $font-size-sm;
+            }
+            img {
+                float: right;
+                width: 60px;
+                border-radius: 30px;
+                margin-left: 10px;
+            }
+        }
+      }
+   }
+}
+
+.equalize-height {
+    .owl-stage {
+        display: flex;
+        align-items: stretch;
+
+        .owl-item {
+            .item {
+                height: 100%;
+            }
+            .full-height {
+                height: 100%;
+            }
+        }
+    }
+}
+
+.full-height {
+    height: 100% !important;
+}
+
+
+.owl-carousel .owl-dots {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+
+    .owl-dot {
+        margin: 0 5px;
+        span {
+            min-width: 12px;
+            width: 12px;
+            min-height: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ddd;
+            display: block;
+        }
+
+        &.active {
+            span {
+                background: $brand-primary;
+            }
+        }
+
+
+    }
+}

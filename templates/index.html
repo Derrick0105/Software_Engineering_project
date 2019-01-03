@@ -1,0 +1,412 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section class="job-form-section job-form-section--image">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="job-form-box">
+                        <h2 class="heading">尋找你想要的實習工作</h2>
+                        <form id="job-main-form" method="get" action="#" class="job-main-form">
+                            <div class="controls">
+                                <div class="row align-items-center">
+                                    <div class="col-md-5">
+                                        <div class="form-group">
+                                            <label for="profession">專長</label>
+                                            <input type="text" id="profession" name="profession"
+                                                   placeholder="例如:資料庫、影像設計" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="form-group">
+                                            <label for="location">區域</label>
+                                            <input type="text" id="location" name="location"
+                                                   placeholder="例如:燕巢區" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button type="submit" name="submit"
+                                                class="btn btn-outline-white-primary job-main-form__button"><i
+                                                class="fa fa-search"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light-gray">
+        <div class="container">
+            <h3 class="heading">Featured jobs</h3>
+            <div class="row featured align-items-stretch">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="box-image-text bg-visible full-height">
+                        <div class="top"><a href="detail.html">
+                            <div class="image"><img src="{% static 'admin/img/featured1.jpg' %}" alt=""
+                                                    class="img-fluid"></div>
+                            <div class="bg"></div>
+                            <div class="logo"><img src="img/company-1.png" alt="" style="max-width: 80px;"></div>
+                        </a></div>
+                        <div class="content">
+                            <h5><a href="detail.html">MIS網管實習</a></h5>
+                            <p class="featured__details"><i class="fa fa-map-marker job__location"></i>高雄市三民區<span
+                                    class="badge featured-badge badge-success">Full Time</span></p>
+                            <p>你有熱忱嗎?你新鮮的肝嗎?不在乎薪資嗎?你就是我們要的人!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="box-image-text bg-visible full-height">
+                        <div class="top"><a href="detail.html">
+                            <div class="image"><img src="{% static 'admin/img/featured2.jpg' %}" alt=""
+                                                    class="img-fluid"></div>
+                            <div class="bg"></div>
+                            <div class="logo"><img src="img/company-3.png" alt="" style="max-width: 80px;"></div>
+                        </a></div>
+                        <div class="content">
+                            <h5><a href="detail.html">演算法工程師(限碩士以上)</a></h5>
+                            <p class="featured__details"><i class="fa fa-map-marker job__location"></i>台北市大安區<span
+                                    class="badge featured-badge badge-success">Full Time</span></p>
+                            <p>歡迎畢業馬上加入我們 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="box-image-text bg-visible full-height">
+                        <div class="top"><a href="detail.html">
+                            <div class="image"><img src="{% static 'admin/img/featured3.jpg' %}" alt=""
+                                                    class="img-fluid"></div>
+                            <div class="bg"></div>
+                            <div class="logo"><img src="img/company-2.png" alt="" style="max-width: 80px;"></div>
+                        </a></div>
+                        <div class="content">
+                            <h5><a href="detail.html">平面設計師實習</a></h5>
+                            <p class="featured__details"><i class="fa fa-map-marker job__location"></i>San
+                                Francisco<span class="badge featured-badge badge-dark">Part Time</span></p>
+                            <p>喜歡畫畫嗎?我們正在尋找愛畫畫而且喜歡加班的工具人.....不是,是設計師,歡迎加入!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h4 class="heading">Trending this month</h4>
+            <div class="job-listing job-listing--featured ">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6">
+                        <div class="row">
+                            <div class="col-2"><img src="img/company-1.png" alt="LoremIpsum " class="img-fluid"></div>
+                            <div class="col-10">
+                                <h4 class="job__title"><a href="detail.html">Webdesigner</a></h4>
+                                <p class="job__company">
+
+                                    LoremIpsum
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 col-md-3 col-lg-2 ml-auto"><i class="fa fa-map-marker job__location"></i>San
+                        Francisco
+                    </div>
+                    <div class="col-10 col-md-3 col-lg-3 ml-auto">
+                        <p>Posted 5 days ago</p>
+                    </div>
+                    <div class="col-sm-12 col-md-2 col-lg-1">
+                        <div class="job__star"><a href="#" data-toggle="tooltip" data-placement="top"
+                                                  title="Save to favourites" class="job__star__link"><i
+                                class="fa fa-star"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="job-listing  ">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6">
+                        <div class="row">
+                            <div class="col-2"><img src="img/company-3.png" alt="Bootstrapious " class="img-fluid">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="job__title"><a href="detail.html">Front End developer</a></h4>
+                                <p class="job__company">
+
+                                    Bootstrapious
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 col-md-3 col-lg-2 ml-auto"><i class="fa fa-map-marker job__location"></i>Palo
+                        Alto
+                    </div>
+                    <div class="col-10 col-md-3 col-lg-3 ml-auto">
+                        <p>Posted 10 days ago</p>
+                    </div>
+                    <div class="col-sm-12 col-md-2 col-lg-1">
+                        <div class="job__star"><a href="#" data-toggle="tooltip" data-placement="top"
+                                                  title="Save to favourites" class="job__star__link"><i
+                                class="fa fa-star"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="job-listing  ">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6">
+                        <div class="row">
+                            <div class="col-2"><img src="img/company-2.png" alt="Ipsioou " class="img-fluid"></div>
+                            <div class="col-10">
+                                <h4 class="job__title"><a href="detail.html">Webdesigner</a></h4>
+                                <p class="job__company">
+
+                                    Ipsioou
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 col-md-3 col-lg-2 ml-auto"><i class="fa fa-map-marker job__location"></i>San
+                        Francisco
+                    </div>
+                    <div class="col-10 col-md-3 col-lg-3 ml-auto">
+                        <p>Posted 5 days ago</p>
+                    </div>
+                    <div class="col-sm-12 col-md-2 col-lg-1">
+                        <div class="job__star"><a href="#" data-toggle="tooltip" data-placement="top"
+                                                  title="Save to favourites" class="job__star__link"><i
+                                class="fa fa-star"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="job-listing  ">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6">
+                        <div class="row">
+                            <div class="col-2"><img src="img/company-4.png" alt="ShareBoardd " class="img-fluid"></div>
+                            <div class="col-10">
+                                <h4 class="job__title"><a href="detail.html">Team Leader</a></h4>
+                                <p class="job__company">
+
+                                    ShareBoardd
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 col-md-3 col-lg-2 ml-auto"><i class="fa fa-map-marker job__location"></i>Palo
+                        Alto
+                    </div>
+                    <div class="col-10 col-md-3 col-lg-3 ml-auto">
+                        <p>Posted 10 days ago</p>
+                    </div>
+                    <div class="col-sm-12 col-md-2 col-lg-1">
+                        <div class="job__star"><a href="#" data-toggle="tooltip" data-placement="top"
+                                                  title="Save to favourites" class="job__star__link"><i
+                                class="fa fa-star"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="job-listing  ">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6">
+                        <div class="row">
+                            <div class="col-2"><img src="img/company-4.png" alt="ShareBoardd " class="img-fluid"></div>
+                            <div class="col-10">
+                                <h4 class="job__title"><a href="detail.html">Software Engineer</a></h4>
+                                <p class="job__company">
+
+                                    ShareBoardd
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 col-md-3 col-lg-2 ml-auto"><i class="fa fa-map-marker job__location"></i>Palo
+                        Alto
+                    </div>
+                    <div class="col-10 col-md-3 col-lg-3 ml-auto">
+                        <p>Posted 14 days ago</p>
+                    </div>
+                    <div class="col-sm-12 col-md-2 col-lg-1">
+                        <div class="job__star"><a href="#" data-toggle="tooltip" data-placement="top"
+                                                  title="Save to favourites" class="job__star__link"><i
+                                class="fa fa-star"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="job-listing  ">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6">
+                        <div class="row">
+                            <div class="col-2"><img src="{% static 'admin/img/company-3.png' %}" alt="Bootstrapious "
+                                                    class="img-fluid">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="job__title"><a href="detail.html">Front End developer</a></h4>
+                                <p class="job__company">
+
+                                    Bootstrapious
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 col-md-3 col-lg-2 ml-auto"><i class="fa fa-map-marker job__location"></i>Palo
+                        Alto
+                    </div>
+                    <div class="col-10 col-md-3 col-lg-3 ml-auto">
+                        <p>Posted 10 days ago</p>
+                    </div>
+                    <div class="col-sm-12 col-md-2 col-lg-1">
+                        <div class="job__star"><a href="#" data-toggle="tooltip" data-placement="top"
+                                                  title="Save to favourites" class="job__star__link"><i
+                                class="fa fa-star"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="job-listing  ">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6">
+                        <div class="row">
+                            <div class="col-2"><img src="img/company-2.png" alt="Ipsioou " class="img-fluid"></div>
+                            <div class="col-10">
+                                <h4 class="job__title"><a href="detail.html">Webdesigner</a></h4>
+                                <p class="job__company">
+
+                                    Ipsioou
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 col-md-3 col-lg-2 ml-auto"><i class="fa fa-map-marker job__location"></i>San
+                        Francisco
+                    </div>
+                    <div class="col-10 col-md-3 col-lg-3 ml-auto">
+                        <p>Posted 5 days ago</p>
+                    </div>
+                    <div class="col-sm-12 col-md-2 col-lg-1">
+                        <div class="job__star"><a href="#" data-toggle="tooltip" data-placement="top"
+                                                  title="Save to favourites" class="job__star__link"><i
+                                class="fa fa-star"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="job-listing  job-listing--last">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6">
+                        <div class="row">
+                            <div class="col-2"><img src="img/company-4.png" alt="ShareBoardd " class="img-fluid"></div>
+                            <div class="col-10">
+                                <h4 class="job__title"><a href="detail.html">Team Leader</a></h4>
+                                <p class="job__company">
+
+                                    ShareBoardd
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 col-md-3 col-lg-2 ml-auto"><i class="fa fa-map-marker job__location"></i>Palo
+                        Alto
+                    </div>
+                    <div class="col-10 col-md-3 col-lg-3 ml-auto">
+                        <p>Posted 10 days ago</p>
+                    </div>
+                    <div class="col-sm-12 col-md-2 col-lg-1">
+                        <div class="job__star"><a href="#" data-toggle="tooltip" data-placement="top"
+                                                  title="Save to favourites" class="job__star__link"><i
+                                class="fa fa-star"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section testimonails bg-light-gray">
+        <div class="container">
+            <h2 class="heading">看看我們的客戶怎麼說</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="owl-carousel testimonials equalize-height">
+                        <li class="item">
+                            <div class="testimonial full-height">
+                                <div class="text">
+                                    <p>自從我用了這個人力網站之後,考試都考100分,自信心都回到我身邊</p>
+                                </div>
+                                <div class="bottom">
+                                    <div class="icon"><i class="fa fa-quote-left"></i></div>
+                                    <div class="name-picture"><img alt="" src="{% static 'admin/img/person-1.jpg' %}">
+                                        <h5>John McIntyre</h5>
+                                        <p>CEO, TransTech</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="testimonial full-height">
+                                <div class="text">
+                                    <p>爛死了</p>
+                                </div>
+                                <div class="bottom">
+                                    <div class="icon"><i class="fa fa-quote-left"></i></div>
+                                    <div class="name-picture"><img alt="" src="{% static 'admin/img/person-2.jpg' %}">
+                                        <h5>John McIntyre</h5>
+                                        <p>CEO, TransTech</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="testimonial full-height">
+                                <div class="text">
+                                    <p>國小的時候老師有規定說髒話要罰5塊錢
+                                        有一次我上課罵髒話被老師罰
+                                        我就拿了10塊錢給老師
+                                        結果老師跟我說他沒錢找我...
+                                        沒辦法
+                                        為了化解這個尷尬的僵局
+                                        我只好把嘴巴湊到老師耳朵旁邊
+                                        悄悄的回答老師：幹 不用找</p>
+                                </div>
+                                <div class="bottom">
+                                    <div class="icon"><i class="fa fa-quote-left"></i></div>
+                                    <div class="name-picture"><img alt="" src="{% static 'admin/img/person-3.png' %}">
+                                        <h5>John McIntyre</h5>
+                                        <p>CEO, TransTech</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="testimonial full-height">
+                                <div class="text">
+                                    <p>有沒有錢多事少離家近的工作?</p>
+                                </div>
+                                <div class="bottom">
+                                    <div class="icon"><i class="fa fa-quote-left"></i></div>
+                                    <div class="name-picture"><img alt="" src="{% static 'admin/img/person-4.jpg' %}">
+                                        <h5>John McIntyre</h5>
+                                        <p>CEO, TransTech</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="testimonial full-height">
+                                <div class="text">
+                                    <p>It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a
+                                        heavy fur muff that covered the whole of her lower arm towards the viewer.
+                                        Gregor then turned to look out the window at the dull weather. Drops of rain
+                                        could be heard hitting the pane, which made him feel quite sad. Gregor then
+                                        turned to look out the window at the dull weather. Drops of rain could be heard
+                                        hitting the pane, which made him feel quite sad.</p>
+                                </div>
+                                <div class="bottom">
+                                    <div class="icon"><i class="fa fa-quote-left"></i></div>
+                                    <div class="name-picture"><img alt="" src="img/person-4.jpg">
+                                        <h5>John McIntyre</h5>
+                                        <p>CEO, TransTech</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

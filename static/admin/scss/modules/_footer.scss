@@ -1,0 +1,106 @@
+/*
+
+=====================
+FOOTER
+=====================
+
+*/
+
+.footer__block {
+    background: $footer-bg;
+    padding: 80px 0;
+
+    h4 {
+        border-top: solid 1px #fff;
+        border-bottom: solid 1px #fff;
+        padding: 15px 0;
+        margin-bottom: 30px;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 0.08rem;
+    }
+    h5 {
+        color: #fff;
+    }
+    ul {
+        li {
+            margin-bottom: 2px;
+        }
+        a {
+            color: #fff;
+            margin-bottom: 2px;
+            font-size: 0.9rem;
+           &:hover {
+               color: $brand-primary;
+               text-decoration: none;
+           }
+        }
+    }
+
+    p {
+        color: #fff;
+        font-size: 0.9rem;
+        a {
+            color: #fff;
+        }
+    }
+
+    p.social {
+        text-align: left;
+    }
+
+    .social {
+        margin-bottom: 2rem;
+       a {
+           margin: 0 10px 0 0;
+           color: #fff;
+           display: inline-block;
+           width: 26px;
+           height: 26px;
+           border-radius: 13px;
+           line-height: 26px;
+           font-size: 15px;
+           text-align: center;
+           @include ondrTransition;
+           vertical-align: bottom;
+          i {
+              vertical-align: bottom;
+              line-height: 26px;
+          }
+          &.facebook {
+              background-color: #4460ae;
+          }
+          &.gplus {
+              background-color: #c21f25;
+          }
+          &.twitter {
+              background-color: #3cf;
+          }
+          &.instagram {
+              background-color: #cd4378;
+          }
+          &.email {
+              background-color: #4a7f45;
+          }
+       }
+    }
+}
+/*
+
+=====================
+COPYRIGHT
+=====================
+
+*/
+.footer__copyright {
+    background: $copyright-bg;
+    color: #ccc;
+    padding: 20px 0;
+    font-size: $font-size-sm;
+    line-height: 28px;
+    font-family: $headings-font-family;
+    @include uppercase;
+    p {
+        margin: 0;
+    }
+}

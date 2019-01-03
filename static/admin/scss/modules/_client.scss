@@ -1,0 +1,60 @@
+/*
+
+=====================
+CLIENT SECTION
+=====================
+
+*/
+
+.table-client-dashboard {
+    th, td {
+        vertical-align: middle !important;
+    }
+    .btn {
+        margin-bottom: 10px;
+    }
+
+    @include media-breakpoint-down(md) {
+        td {
+            font-size: $font-size-sm;
+        }
+    }
+}
+
+.applicant {
+    clear: both;
+    .image {
+        width: 100px;
+        margin-left: 20px;
+    }
+    .text {
+        float: left;
+    }
+    .btn {
+        margin-bottom: 5px;
+        margin-right: 5px;
+    }
+    .intro {
+        font-size: $font-size-sm;
+        color: $gray-600;
+        width: calc(100% - 120px);
+    }
+}
+
+.job-add-form {
+    label {
+        font-weight: bold;
+        font-size: 0.9rem;
+        color: #555;
+       .note {
+           font-weight: normal;
+       }
+    }
+}
+
+.help-block {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #777;
+    display: block;
+}

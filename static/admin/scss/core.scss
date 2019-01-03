@@ -1,0 +1,44 @@
+
+/*
+=========================================
+=========================================
+
+Bootstrapious Boilerplate Template
+
+=========================================
+========================================= */
+
+
+// functions.scss - Bootstrap functions
+@import "modules/functions";
+// variables-custom.scss - to change colour variant, rounded corners, etc.
+@import "modules/variables-custom";
+// bootstrap mixins
+@import "modules/mixins";
+// custom mixins
+@import "modules/mixins-custom";
+// general styling
+@import "modules/general";
+// navbar styling
+@import "modules/navbar";
+// footer styling
+@import "modules/footer";
+// team styling
+@import "modules/team";
+// blog styling
+@import "modules/blog";
+// carousels styling
+@import "modules/carousels";
+// boxes styling
+@import "modules/boxes";
+// jobs styling
+@import "modules/jobs";
+// client styling
+@import "modules/client";
+// packages styling
+@import "modules/packages";
+// demo styling
+@import "modules/demo";
+
+// bootstrap base stylesheet overrides
+@import "theme";
