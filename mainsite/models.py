@@ -9,7 +9,7 @@ class Location_set(models.Model):
 
 class Job_list(models.Model):
     title=models.CharField(max_length=200)
-    location=models.ForeignKey(Location_set,on_delete=models.CASCADE)
+    location=models.CharField(max_length=10)
     name=models.CharField(max_length=200)
     skill=models.CharField(max_length=200)
     experience=models.PositiveIntegerField()
@@ -18,7 +18,7 @@ class Job_list(models.Model):
     logo=models.ImageField(default='未選擇',upload_to='photos')
 
     def __str__(self):
-        return self.name
+        return self.id
 
 
 

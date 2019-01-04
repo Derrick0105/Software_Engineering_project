@@ -32,7 +32,7 @@
 <!-- navbar-->
 <header class="header">
     <nav class="navbar navbar-expand-lg">
-        <div class="container"><a href="{% url 'index' %}" class="navbar-brand"><img src="img/logo.png" alt="logo"
+        <div class="container"><a href="{% url 'index' %}" class="navbar-brand"><img src="{% static 'admin/img/nknu_logo.png'%}" alt="logo"
                                                                                      class="d-none d-lg-block"><img
                 src="img/logo-small.png" alt="logo" class="d-block d-lg-none"><span
                 class="sr-only">Go to homepage</span></a>
@@ -118,5 +118,6 @@
 <script src="{% static 'admin/vendor/owl.carousel/owl.carousel.min.js' %}"></script>
 <script src="{% static 'admin/vendor/bootstrap-select/js/bootstrap-select.min.js' %}"></script>
 <script src="{% static 'admin/js/front.js' %}"></script>
+<script src="{% static 'admin/js/myjs.js' %}"></script>
 </body>
 </html>
