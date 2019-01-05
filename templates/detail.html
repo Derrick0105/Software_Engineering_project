@@ -22,39 +22,31 @@
                     <h4>詳細內容:</h4>
                     <ul>
                         <li>職務類別： {{ job_detail.title }}</li>
-                        <li>工作待遇： 月薪 22K</li>
-                        <li>工作性質： 全職</li>
+                        <li>工作待遇： {{ job_detail.pay }}</li>
                         <li>上班地點： {{ job_detail.location }}</li>
-                        <li>管理責任： 不需負擔管理責任</li>
-                        <li>出差外派： 無需出差外派</li>
                         <li>上班時段： 日班</li>
                         <li>休假制度： 週休二日</li>
-                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                        <li>Aliquam tincidunt mauris eu risus.</li>
                     </ul>
 
                     <h5>條件要求:</h5>
                     <ul>
-                        <li>學歷:我們只要台大或高師大,其他雜魚請不要來面試謝謝</li>
-                        <li>經歷:希望是從12歲就開始寫程式的人,要有10年經驗,沒這個資歷也請不要投謝謝</li>
+                        <li>學歷:{{ job_detail.education }}</li>
+                        <li>經歷:{{ job_detail.experience }}年</li>
                     </ul>
                     <h4>福利:</h4>
                     <ol>
-                        <li>沒這種東西,年終就像尼斯湖水怪一樣,有聽過沒看過</li>
-                        <li>Aliquam tincidunt mauris eu risus.</li>
+                        <li>{{ job_detail.bonus }}</li>
                     </ol>
-                    <h5>業主補充:</h5>
+                    <h5>關於{{ job_detail.name }}:</h5>
                     <blockquote class="blockquote">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis
-                            aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend,
-                            libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam.
-                            Vivamus pretium ornare est.</p>
+                        <p>{{ job_detail.about_company }}</p>
                     </blockquote>
 
-
-                    <div class="job-detail__apply-bottom"><a href="#applyModal" data-toggle="modal" id="apply"
-                                                             class="btn btn-outline-white-primary">我要應徵</a>
-                    </div>
+                    {% if username %}
+                        <div class="job-detail__apply-bottom"><a href="#applyModal" data-toggle="modal" id="apply"
+                                                                 class="btn btn-outline-white-primary">我要應徵</a>
+                        </div>
+                    {% endif %}
                 </div>
                 <div id="applyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"
                      class="modal fade">
@@ -71,7 +63,7 @@
                                     <div class="form-group">
                                         <label for="formGroupExampleInput">姓名</label>
                                         <input type="text" class="form-control" name="apply_name"
-                                               value="{{ name }}">
+                                               value="{{ username }}">
                                     </div>
                                     <div class="form-group">
                                         <label for="formGroupExampleInput2">系級</label>

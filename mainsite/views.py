@@ -25,7 +25,7 @@ def about(request):
 def detail(request, jobID):
     job_detail = models.Job_list.objects.get(id=jobID)
     if 'username' in request.session:
-        name = request.session['username']
+        username = request.session['username']
         department = request.session['department']
         email = request.session['email']
     return render(request, 'detail.html', locals())
