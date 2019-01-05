@@ -1,7 +1,6 @@
-$("#searching").click(function () {
+/*$("#searching").click(function () {
     var profession = $("#profession").val();
     var location = $("#location").val();
-
 
     $.ajax({
         url: "/searching/",
@@ -10,10 +9,9 @@ $("#searching").click(function () {
             "profession": profession,
             "location": location,
         },
-        /*success: function (vv) {
-
-        }*/
+        success: function (vv) {
+            alert(vv[0]);
+            //document.location.href="/category/"+vv;
+        }
     })
-
-    location.replace("www.google.com");
-});
+});*/

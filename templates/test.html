@@ -1,12 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>測試頁面</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="exampleInputName"></label>
+                <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp"
+                       placeholder="姓名">
+                <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.
+                </small>-->
+            </div>
 
-{{ jobID }}
+            <div class="form-row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="系級">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="學號">
+                </div>
+            </div>
 
-</body>
-</html>
+            <div class="form-group">
+                <label for="exampleInputEmail1"></label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                       placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="請輸入密碼">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="請確認密碼">
+            </div>
+
+
+            <label class="my-1 mr-2" for="inlineFormCustomSelectPref"></label>
+            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                <option selected>請選擇專長</option>
+                <option value="1">網頁設計</option>
+                <option value="2">資料庫</option>
+                <option value="3">美編</option>
+                <option value="3">企劃</option>
+            </select>
+
+            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                <input type="checkbox" class="custom-control-input" id="customControlInline">
+
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">履歷描述</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+
+            <div class="form-group">
+                <label for="exampleFormControlFile1">上傳求職照片</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+
+
+            <button type="submit" class="btn btn-primary my-1">註冊</button>
+
+        </form>
+
+    </div>
+
+{% endblock %}

@@ -7,7 +7,7 @@
                 <div class="col-lg-8 mx-auto">
                     <div class="job-form-box">
                         <h2 class="heading">尋找你想要的實習工作</h2>
-                        <form id="job-main-form" method="get" action="#" class="job-main-form">
+                        <form id="job-main-form" method="get" action="category/" class="job-main-form">
                             {% csrf_token %}
                             <div class="controls">
                                 <div class="row align-items-center">
@@ -26,7 +26,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-2">
-                                        <button id="searching" type="button" name="submit"
+                                        <button id="searching" type="submit" name="submit"
                                                 class="btn btn-outline-white-primary job-main-form__button"><i
                                                 class="fa fa-search"></i></button>
                                     </div>
@@ -102,7 +102,7 @@
                         <div class="col-md-12 col-lg-6">
                             <div class="row">
                                 <div class="col-12">
-                                    <h4 class="job__title"><a href="detail/{{ forloop.counter0 }}">{{ job.title }}</a></h4>
+                                    <h4 class="job__title"><a href="detail/{{ job.id }}">{{ job.title }}</a></h4>
                                     <p class="job__company">
 
                                         {{ job.name }}

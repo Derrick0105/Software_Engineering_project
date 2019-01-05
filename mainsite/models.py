@@ -18,7 +18,7 @@ class Job_list(models.Model):
     logo=models.ImageField(default='未選擇',upload_to='photos')
 
     def __str__(self):
-        return self.id
+        return self.name
 
 
 
