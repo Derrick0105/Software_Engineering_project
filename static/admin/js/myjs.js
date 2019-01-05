@@ -1,17 +1,12 @@
-/*$("#searching").click(function () {
-    var profession = $("#profession").val();
-    var location = $("#location").val();
-
+$("#logout_button").click(function () {
     $.ajax({
-        url: "/searching/",
+        url: "/logout/",
         type: "POST",
         data: {
-            "profession": profession,
-            "location": location,
         },
         success: function (vv) {
-            alert(vv[0]);
-            //document.location.href="/category/"+vv;
+            alert(vv);
         }
     })
-});*/
+    document.location.href="/";
+});

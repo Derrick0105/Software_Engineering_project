@@ -5,3 +5,4 @@ from mainsite import models
 
 admin.site.register(models.Location_set)
 admin.site.register(models.Job_list)
+admin.site.register(models.User)

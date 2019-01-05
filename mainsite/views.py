@@ -1,11 +1,16 @@
-from django.shortcuts import render
-from mainsite import models
+from django.shortcuts import render,redirect
+from mainsite import models,forms
+from django.contrib import messages
+
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
 
 
 # Create your views here.
 def index(request):
+    if 'username' in request.session:
+        username=request.session['username']
+        #useremail = request.session['username']
     job_list = models.Job_list.objects.all()
     return render(request, 'index.html', locals())
 
@@ -30,8 +35,36 @@ def category(request):
     count=len(result)+1
     return  render(request,'category.html',locals())
 
+def register(request):
+    form = forms.ContactForm()
+    return  render(request,'register.html',locals())
+
+def login(request):
+    if request.method == 'POST':
+        login_acc=request.POST['useracc'].strip()
+        login_password=request.POST['password']
+        try:
+            user=models.User.objects.get(account=login_acc)
+            if user.password==login_password:
+                request.session['username']=user.name
+                request.session['email'] = user.email
+                return redirect('/')
+            else:
+                messages="密碼錯惹啦!"
+        except:
+            messages="找不到使用者"
+    else:
+        login_form = forms.LoginForm()
+    return render(request, 'index.html', locals())
+@csrf_exempt
+def logout(request):
+    request.session['username'] = None
+    return HttpResponse('成功登出')
+
 def test(request):
+    te=request.session['password']
     return  render(request,'test.html',locals())
+
 '''
 @csrf_exempt
 def searching(request):
