@@ -21,6 +21,11 @@ def about(request):
         username = request.session['username']
     return render(request, 'about.html', locals())
 
+def contact(request):
+    if 'username' in request.session:
+        username = request.session['username']
+    return render(request, 'contact.html', locals())
+
 
 def detail(request, jobID):
     job_detail = models.Job_list.objects.get(id=jobID)
@@ -40,7 +45,8 @@ def category(request):
 
     result = models.Job_list.objects.filter(skill__iexact=profession) | models.Job_list.objects.filter(
         location__iexact=location)
-    count = len(result) + 1
+    count = len(result)
+    control_string='job-listing--last'
     return render(request, 'category.html', locals())
 
 
