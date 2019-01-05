@@ -115,6 +115,17 @@ USE_L10N = True
 
 USE_TZ = True
 
+EMAIL_BACKEND='django_mailgun.MailgunBackend'
+MAILGUN_ACCESS_KEY='5e7a8943c90ca338b07b827701b834e0-49a2671e-09772697'
+MAILGUN_SERVER_NAME='sandbox3b64ff1ff76642199c2a21b8f1232582.mailgun.org'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = '410577036@mail.nknu.edu.tw'
+EMAIL_HOST_PASSWORD = 'a75124609'
+EMAIL_PORT = 587
+
+
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
@@ -129,3 +140,6 @@ STATICFILES_DIRS=[
 
 
 STATIC_ROOT=os.path.join(BASE_DIR,'static')
+
+
+

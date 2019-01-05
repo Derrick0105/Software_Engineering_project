@@ -4,6 +4,7 @@ from django.contrib import messages
 
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
+from django.core.mail import EmailMessage
 
 
 # Create your views here.
@@ -21,6 +22,10 @@ def about(request):
 
 def detail(request, jobID):
     job_detail = models.Job_list.objects.get(id=jobID)
+    if 'username' in request.session:
+        name=request.session['username']
+        department = request.session['department']
+        email = request.session['email']
     return render(request, 'detail.html', locals())
 
 def category(request):
@@ -39,6 +44,34 @@ def register(request):
     form = forms.ContactForm()
     return  render(request,'register.html',locals())
 
+def test(request):
+    if 'username' in request.session:
+        name=request.session['username']
+        department = request.session['department']
+        email = request.session['email']
+    return  render(request,'test.html',locals())
+def apply(request):
+    if 'username' in request.session:
+        name=request.session['username']
+        department = request.session['department']
+        email = request.session['email']
+    return  render(request,'apply.html',locals())
+def send(request):
+    title='你有來自高師徵才網的求職信'
+    apply_name = request.POST['apply_name'].strip()
+    apply_department = request.POST['apply_department'].strip()
+    apply_description=request.POST['apply_description'].strip()
+    apply_email = request.POST['apply_email'].strip()
+    JobID=request.POST['JobID'].strip()
+    job_detail = models.Job_list.objects.get(id=JobID)
+    company_email=job_detail.company_email.strip()
+    print(company_email)
+
+    email = EmailMessage(title, apply_description, apply_email, [company_email])
+    email.send()
+    return render(request, '/', locals())
+
+
 def login(request):
     if request.method == 'POST':
         login_acc=request.POST['useracc'].strip()
@@ -47,6 +80,7 @@ def login(request):
             user=models.User.objects.get(account=login_acc)
             if user.password==login_password:
                 request.session['username']=user.name
+                request.session['department'] = user.department
                 request.session['email'] = user.email
                 return redirect('/')
             else:
@@ -61,9 +95,7 @@ def logout(request):
     request.session['username'] = None
     return HttpResponse('成功登出')
 
-def test(request):
-    te=request.session['password']
-    return  render(request,'test.html',locals())
+
 
 '''
 @csrf_exempt

@@ -16,6 +16,7 @@ class Job_list(models.Model):
     description=models.TextField(default='說明職務內容')
     pub_date=models.DateTimeField(default=timezone.now)
     logo=models.ImageField(default='未選擇',upload_to='photos')
+    company_email=models.EmailField(default='請輸入廠商email')
 
     def __str__(self):
         return self.name
@@ -28,12 +29,9 @@ class User(models.Model):
     department=models.CharField(max_length=20,default='請輸入系級')
     description = models.CharField(max_length=200,default='請輸入履歷')
     email = models.EmailField()
-    enabled=models.BooleanField(default=False)
-
 
     def __str__(self):
         return self.name
-
 
 
 
