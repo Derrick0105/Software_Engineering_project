@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="387b7f6b-f88b-4068-88d2-58689a9016de" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Software_Engineering_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Software_Engineering_project/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainsite/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainsite/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainsite/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainsite/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,16 +51,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="45" column="102" selection-start-line="45" selection-start-column="102" selection-end-line="45" selection-end-column="102" />
+            <state relative-caret-position="285">
+              <caret line="15" column="100" selection-start-line="15" selection-start-column="100" selection-end-line="15" selection-end-column="100" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mainsite/admin.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
@@ -178,8 +173,8 @@
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/Software_Engineering_project/urls.py" />
         <option value="$PROJECT_DIR$/mainsite/views.py" />
-        <option value="$PROJECT_DIR$/templates/contact.html" />
         <option value="$PROJECT_DIR$/mainsite/admin.py" />
+        <option value="$PROJECT_DIR$/templates/contact.html" />
       </list>
     </option>
   </component>
@@ -291,12 +286,12 @@
       <option name="presentableId" value="Default" />
       <updated>1546523853200</updated>
       <workItem from="1546523882854" duration="397000" />
-      <workItem from="1546524351534" duration="86273000" />
+      <workItem from="1546524351534" duration="86527000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86670000" />
+    <option name="totallyTimeSpent" value="86924000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -502,13 +497,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="45" column="102" selection-start-line="45" selection-start-column="102" selection-end-line="45" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mainsite/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -516,6 +504,13 @@
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="100" selection-start-line="15" selection-start-column="100" selection-end-line="15" selection-end-column="100" />
         </state>
       </provider>
     </entry>
