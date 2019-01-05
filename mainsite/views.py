@@ -17,6 +17,8 @@ def index(request):
 
 
 def about(request):
+    if 'username' in request.session:
+        username = request.session['username']
     return render(request, 'about.html', locals())
 
 
