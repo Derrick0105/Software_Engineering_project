@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="387b7f6b-f88b-4068-88d2-58689a9016de" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/static/admin/js/myjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/js/myjs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/detail.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -89,11 +90,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-529">
-              <caret line="26" column="56" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+            <state relative-caret-position="383">
+              <caret line="56" column="44" lean-forward="true" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/admin/js/myjs.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -103,18 +113,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="47" selection-start-column="47" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mainsite/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="62" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -161,7 +159,6 @@
         <option value="$PROJECT_DIR$/templates/register.html" />
         <option value="$PROJECT_DIR$/mainsite/forms.py" />
         <option value="$PROJECT_DIR$/templates/test.html" />
-        <option value="$PROJECT_DIR$/static/admin/js/myjs.js" />
         <option value="$PROJECT_DIR$/mainsite/admin.py" />
         <option value="$PROJECT_DIR$/mainsite/models.py" />
         <option value="$PROJECT_DIR$/mainsite/views.py" />
@@ -173,6 +170,7 @@
         <option value="$PROJECT_DIR$/Software_Engineering_project/urls.py" />
         <option value="$PROJECT_DIR$/Software_Engineering_project/settings.py" />
         <option value="$PROJECT_DIR$/templates/detail.html" />
+        <option value="$PROJECT_DIR$/static/admin/js/myjs.js" />
       </list>
     </option>
   </component>
@@ -200,6 +198,24 @@
               <item name="Software_Engineering_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Software_Engineering_project" type="462c0819:PsiDirectoryNode" />
               <item name="Software_Engineering_project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Software_Engineering_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Software_Engineering_project" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Software_Engineering_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Software_Engineering_project" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Software_Engineering_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Software_Engineering_project" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Software_Engineering_project" type="b2602c69:ProjectViewProjectNode" />
@@ -268,12 +284,12 @@
       <option name="presentableId" value="Default" />
       <updated>1546523853200</updated>
       <workItem from="1546523882854" duration="397000" />
-      <workItem from="1546524351534" duration="60992000" />
+      <workItem from="1546524351534" duration="61492000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61389000" />
+    <option name="totallyTimeSpent" value="61889000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -369,13 +385,6 @@
             <element signature="e#525#836#0#HTML" />
             <element signature="e#850#1109#0#HTML" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/admin/js/myjs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -477,8 +486,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-529">
-          <caret line="26" column="56" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+        <state relative-caret-position="383">
+          <caret line="56" column="44" lean-forward="true" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/admin/js/myjs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
         </state>
       </provider>
     </entry>
