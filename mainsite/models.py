@@ -33,6 +33,7 @@ class User(models.Model):
     department=models.CharField(max_length=20,default='請輸入系級')
     description = models.CharField(max_length=200,default='請輸入履歷')
     email = models.EmailField()
+    img=models.CharField(max_length=200,default='admin/img/company-1.png')
 
     def __str__(self):
         return self.name

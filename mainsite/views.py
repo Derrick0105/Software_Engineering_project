@@ -50,6 +50,18 @@ def category(request):
     control_string='job-listing--last'
     return render(request, 'category.html', locals())
 
+def resume(request):
+    if 'username' in request.session and request.session['username']!=None:
+        username = request.session['username']
+        department = request.session['department']
+        email = request.session['email']
+        account = request.session['account']
+        description = request.session['description']
+        img=request.session['img']
+        return render(request, 'resume.html', locals())
+    else:
+        return redirect('/')
+
 
 def register(request):
     form = forms.ContactForm()
@@ -84,7 +96,6 @@ def send(request):
     JobID = request.POST['JobID'].strip()
     job_detail = models.Job_list.objects.get(id=JobID)
     company_email = job_detail.company_email.strip()
-    print(company_email)
 
     email = EmailMessage(title, apply_description, apply_email, [company_email])
     email.send()
@@ -99,8 +110,11 @@ def login(request):
             user = models.User.objects.get(account=login_acc)
             if user.password == login_password:
                 request.session['username'] = user.name
+                request.session['account'] = user.account
                 request.session['department'] = user.department
                 request.session['email'] = user.email
+                request.session['description']=user.description
+                request.session['img'] = user.img
                 return redirect('/')
             else:
                 messages = "密碼錯惹啦!"
@@ -115,18 +129,3 @@ def login(request):
 def logout(request):
     request.session['username'] = None
     return HttpResponse('成功登出')
-
-
-'''
-@csrf_exempt
-def searching(request):
-    profession=request.POST.get('profession')
-    location=request.POST.get('location')
-    result = models.Job_list.objects.filter(skill__iexact=profession)| models.Job_list.objects.filter(
-    location__contains=location)
-    id_list=[]
-    for i in result:
-        id_list.append(i.id)
-
-    return HttpResponse(id_list)
-'''
