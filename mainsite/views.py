@@ -13,6 +13,7 @@ def index(request):
         username = request.session['username']
         # useremail = request.session['username']
     job_list = models.Job_list.objects.all()
+    count = len(job_list)
     return render(request, 'index.html', locals())
 
 
