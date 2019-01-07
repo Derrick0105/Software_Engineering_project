@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="387b7f6b-f88b-4068-88d2-58689a9016de" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-    </list>
+    <list default="true" id="387b7f6b-f88b-4068-88d2-58689a9016de" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +42,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mainsite/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="35" column="40" lean-forward="true" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+            <state relative-caret-position="1767">
+              <caret line="93" column="65" lean-forward="true" selection-start-line="93" selection-start-column="65" selection-end-line="93" selection-end-column="65" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -275,12 +273,12 @@
       <option name="presentableId" value="Default" />
       <updated>1546523853200</updated>
       <workItem from="1546523882854" duration="397000" />
-      <workItem from="1546524351534" duration="102053000" />
+      <workItem from="1546524351534" duration="102445000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102450000" />
+    <option name="totallyTimeSpent" value="102842000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -515,8 +513,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mainsite/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="35" column="40" lean-forward="true" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+        <state relative-caret-position="1767">
+          <caret line="93" column="65" lean-forward="true" selection-start-line="93" selection-start-column="65" selection-end-line="93" selection-end-column="65" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
